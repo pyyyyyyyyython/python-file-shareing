@@ -12,6 +12,28 @@ class WindowClass(QMainWindow, form_class) :
         super().__init__()
         self.setupUi(self)
 
+        # 사용자 연결 화면 시그널 연결
+
+        # 서버의 주소 입력 칸(path, QLineEdit)연결
+        '''
+        텍스트 입력이므로 연결하지 않음
+        연결 시도 QPushButton에서 다음 코드로 사용
+        `self.path.text()`
+        '''
+
+        # 서버 연결 버튼(connect, QPushButton)연결
+        self.connect.clicked.connect(self.server_connect) # server_connect 함수: 서버 연결을 요청
+
+        # 서버 연결 로딩바(connect_progress, QProgressBar)연결
+        '''
+        상태 로딩이므로 연결하지 않음
+        연결 요청 함수 server_connect() 에서 변경
+        다음 코드 사용:
+        read document
+        '''
+
+        # 연결된 서버의 파일을 모두 출력하는 tree view(treeView, QTreeView)연결
+
 
 
 if __name__ == "__main__" :
