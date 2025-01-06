@@ -29,7 +29,7 @@
     <enum>QTabWidget::Rounded</enum>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>1</number>
    </property>
    <property name="iconSize">
     <size>
@@ -159,8 +159,14 @@
        <pointsize>8</pointsize>
       </font>
      </property>
+     <property name="minimum">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <number>100</number>
+     </property>
      <property name="value">
-      <number>20</number>
+      <number>1</number>
      </property>
      <property name="textVisible">
       <bool>false</bool>
@@ -194,7 +200,7 @@
       </rect>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="select_download">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -298,14 +304,19 @@
       <string>아래에 공유할 파일의 폴더 위치를 입력하세요</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="server_path">
+    <widget class="QLineEdit" name="folder_path">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>80</y>
-       <width>771</width>
-       <height>31</height>
+       <x>280</x>
+       <y>82</y>
+       <width>501</width>
+       <height>41</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
      </property>
     </widget>
     <widget class="QLabel" name="label_3">
@@ -347,9 +358,9 @@
     <widget class="QPushButton" name="server_start">
      <property name="geometry">
       <rect>
-       <x>500</x>
+       <x>470</x>
        <y>140</y>
-       <width>261</width>
+       <width>141</width>
        <height>51</height>
       </rect>
      </property>
@@ -471,6 +482,67 @@ p, li { white-space: pre-wrap; }
        <width>771</width>
        <height>71</height>
       </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="find_start">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>77</y>
+       <width>261</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>19</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>시작 위치 찾기</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="server_stop">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>140</y>
+       <width>141</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>19</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Stop</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>-240</x>
+       <y>320</y>
+       <width>771</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:6pt;&quot;&gt;여러분 ip 주소 공개되도 ip 주소로 뭐 못하니까 신경쓰지 마세요 제발 좀&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </widget>
